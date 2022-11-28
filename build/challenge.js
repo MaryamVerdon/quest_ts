@@ -1,5 +1,4 @@
 "use strict";
-// challenge.ts
 const prettyPrintWilder = (users) => {
     users.map((user) => {
         console.log(`${user.name} is ${user.age} years old`);

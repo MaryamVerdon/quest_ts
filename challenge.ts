@@ -1,17 +1,16 @@
 // challenge.ts
-
-  interface Users {
-    age: number;
-    name: string;
-  }
-
-  const prettyPrintWilder = (users: Users) => {
+interface Users {
+  age: number;
+  name: string;
+}
+ 
+  const prettyPrintWilder = (users: Users[]) : void => {
     users.map((user: Users) => {
       console.log(`${user.name} is ${user.age} years old`);
     });
   };
 
-  const wilders : object[] = [];
+  const wilders : Users[] = [];
   const user1 = { name: "Pierre", age: 23 };
   const user2: any = { name: "Paul", birthday: "10/02/1990" };
   const user3 = { name: "Jacques", age: 25 };
